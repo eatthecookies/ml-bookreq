@@ -1,0 +1,198 @@
+:root {
+  --ml-primary: #0f172a;
+  --ml-accent: #6366f1;
+  --ml-accent-hover: #4f46e5;
+  --ml-light-bg: #f8fafc;
+  --ml-text: #1e293b;
+}
+
+.ml-navbar,
+.navbar-menu.is-active {
+  background-color: var(--ml-primary) !important;
+  color: white;
+}
+
+.ml-navbar .navbar-item,
+.ml-navbar .navbar-brand .navbar-item {
+  color: white !important;
+}
+
+.ml-navbar .navbar-item:hover,
+.ml-navbar .navbar-brand .navbar-menu {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.ml-navbar .navbar-burger span {
+  background-color: white;
+}
+
+.ml-hero {
+  background-color: var(--ml-primary) !important;
+  color: white;
+}
+
+.ml-hero .title,
+.ml-hero .subtitle {
+  color: white;
+  line-height: 1.4;
+}
+
+.ml-button {
+  background-color: var(--ml-accent) !important;
+  color: white !important;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.ml-button:hover {
+  background-color: var(--ml-accent-hover) !important;
+}
+
+.ml-light-section {
+  background-color: var(--ml-light-bg) !important;
+}
+
+body {
+  color: var(--ml-text);
+}
+
+.ml-process-icon {
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--ml-accent) !important;
+  color: white !important;
+}
+
+.ml-process-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ml-primary);
+  margin-bottom: 0.75rem;
+}
+
+.ml-process-description {
+  color: var(--ml-text);
+  line-height: 1.6;
+}
+
+.ml-process-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  height: 100%;
+  border: 1px solid #e2e8f0;
+}
+
+.ml-footer {
+  background-color: var(--ml-primary) !important;
+  color: white;
+  padding: 2rem 0;
+}
+
+.ml-footer .content {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.ml-footer a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+
+.ml-footer a:hover {
+  color: white;
+}
+
+.ml-tag {
+  background-color: var(--ml-light-bg) !important;
+  color: var(--ml-text) !important;
+  border: 1px solid #e2e8f0;
+}
+
+.ml-tag .icon {
+  color: var(--ml-accent);
+}
+
+.ml-feature-card {
+  height: 100%;
+  border: 1px solid #e2e8f0;
+}
+
+.ml-feature-card .icon {
+  color: var(--ml-accent) !important;
+}
+
+.section {
+  padding: 4rem 1.5rem;
+}
+
+.section .title.is-3 {
+  color: var(--ml-primary);
+  font-weight: 600;
+}
+
+.card {
+  border-radius: 8px;
+}
+
+.image img {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.ml-accordion-item {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.ml-accordion-summary {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--ml-primary);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.ml-accordion-icon {
+  color: var(--ml-accent);
+  transition: transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.ml-accordion-item[open] .ml-accordion-icon {
+  transform: rotate(90deg);
+}
+
+.ml-accordion-content {
+  padding: 0 1.25rem 1.25rem 3rem;
+  color: var(--ml-text);
+  line-height: 1.6;
+}
+
+.ml-accordion-content p {
+  margin-bottom: 0;
+}
+
+.ml-icon-accent {
+  color: var(--ml-accent) !important;
+}
+
+.ml-404-title {
+  font-size: 8rem !important;
+  font-weight: 900 !important;
+  background: #ffffff;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  letter-spacing: -0.05em;
+}

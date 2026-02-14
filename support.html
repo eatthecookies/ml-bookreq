@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Поддержка - BookRec AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- навигационная панель -->
+    <nav class="navbar is-fixed-top ml-navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item has-text-weight-bold" href="index.html">
+                    <span class="icon mr-2">
+                        <i class="fas fa-book-reader"></i>
+                    </span>
+                    BookRec AI
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="index.html" class="navbar-item">
+                        <span class="icon mr-2">
+                            <i class="fas fa-home"></i>
+                        </span>
+                        <span>Главная</span>
+                    </a>
+                    <a href="about.html" class="navbar-item">
+                        <span class="icon mr-2">
+                            <i class="fas fa-info-circle"></i>
+                        </span>
+                        <span>О проекте</span>
+                    </a>
+                    <a href="faq.html" class="navbar-item">
+                        <span class="icon mr-2">
+                            <i class="fas fa-question-circle"></i>
+                        </span>
+                        <span>FAQ</span>
+                    </a>
+                    <a href="support.html" class="navbar-item">
+                        <span class="icon mr-2">
+                            <i class="fas fa-headset"></i>
+                        </span>
+                        <span>Поддержка</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- hero секция -->
+    <section class="hero ml-hero is-medium">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="mb-5">
+                    <span class="icon is-large has-text-white">
+                        <i class="fas fa-headset fa-3x"></i>
+                    </span>
+                </div>
+                <h1 class="title is-2 mb-5">
+                    Поддержка
+                </h1>
+                <h2 class="subtitle is-5 mb-5">
+                    Связь с разработчиком и сообщения об ошибках
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контактная информация -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <h2 class="title is-3 mb-5">Контактная информация</h2>
+                    <div class="content mb-6">
+                        <p class="mb-4">
+                            На данной странице вы можете связаться с разработчиком проекта для получения
+                            дополнительной информации, сообщения об обнаруженных ошибках или предложения
+                            по улучшению системы. Все обращения рассматриваются в порядке поступления.
+                        </p>
+                    </div>
+
+                    <div class="columns">
+                        <div class="column">
+                            <div class="box">
+                                <div class="content has-text-centered">
+                                    <div class="mb-4">
+                                        <span class="icon is-large ml-icon-accent">
+                                            <i class="fas fa-envelope fa-3x"></i>
+                                        </span>
+                                    </div>
+                                    <h3 class="title is-5 mb-3">Email</h3>
+                                    <p class="mb-3">
+                                        <a href="mailto:a.vorobev@edu.mirea.ru" class="has-text-weight-semibold">
+                                            a.vorobev@edu.mirea.ru
+                                        </a>
+                                    </p>
+                                    <p class="is-size-7 has-text-grey">
+                                        Для вопросов и технической поддержки
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="box">
+                                <div class="content has-text-centered">
+                                    <div class="mb-4">
+                                        <span class="icon is-large ml-icon-accent">
+                                            <i class="fab fa-github fa-3x"></i>
+                                        </span>
+                                    </div>
+                                    <h3 class="title is-5 mb-3">GitHub</h3>
+                                    <p class="mb-3">
+                                        <a href="https://github.com/eatthecookies" target="_blank"
+                                            class="has-text-weight-semibold">
+                                            github.com/eatthecookies
+                                        </a>
+                                    </p>
+                                    <p class="is-size-7 has-text-grey">
+                                        Исходный код и документация проекта
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section class="section ml-light-section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <h2 class="title is-3 mb-5 has-text-centered">Форма обратной связи</h2>
+                    <div class="box">
+                        <form id="contactForm">
+                            <div class="field">
+                                <label class="label">Имя</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Введите ваше имя" required>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control">
+                                    <input class="input" type="email" placeholder="your.email@example.com" required>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Сообщение</label>
+                                <div class="control">
+                                    <textarea class="textarea"
+                                        placeholder="Опишите ваш вопрос, проблему или предложение" rows="6"
+                                        required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button ml-button is-fullwidth" type="submit">
+                                        <span class="icon mr-2">
+                                            <i class="fas fa-paper-plane"></i>
+                                        </span>
+                                        <span>Отправить сообщение</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- футер -->
+    <footer class="footer ml-footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p class="has-text-weight-semibold mb-2">BookRec AI</p>
+                <p class="mb-2">Система рекомендаций книг на основе машинного обучения</p>
+                <p class="mb-3">
+                    <span>ВКР, 2026</span>
+                </p>
+                <p>
+                    <a href="mailto:a.vorobev@edu.mirea.ru">
+                        <span class="icon mr-1">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        a.vorobev@edu.mirea.ru
+                    </a>
+                    <span class="mx-2">|</span>
+                    <a href="https://github.com/eatthecookies">
+                        <span class="icon mr-1">
+                            <i class="fab fa-github"></i>
+                        </span>
+                        GitHub
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.');
+            this.reset();
+        });
+    </script>
+
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+            });
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ - BookRec AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- навигационная панель -->
+    <nav class="navbar is-fixed-top ml-navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item has-text-weight-bold" href="index.html">
+                    <span class="icon mr-2">
+                        <i class="fas fa-book-reader"></i>
+                    </span>
+                    BookRec AI
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="index.html" class="navbar-item">
+                        <span class="icon mr-2">
+                            <i class="fas fa-home"></i>
+                        </span>
+                        <span>Главная</span>
+                    </a>
+                    <a href="about.html" class="navbar-item">
+                        <span class="icon mr-2">
+                            <i class="fas fa-info-circle"></i>
+                        </span>
+                        <span>О проекте</span>
+                    </a>
+                    <a href="faq.html" class="navbar-item">
+                        <span class="icon mr-2">
+                            <i class="fas fa-question-circle"></i>
+                        </span>
+                        <span>FAQ</span>
+                    </a>
+                    <a href="support.html" class="navbar-item">
+                        <span class="icon mr-2">
+                            <i class="fas fa-headset"></i>
+                        </span>
+                        <span>Поддержка</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- hero секция -->
+    <section class="hero ml-hero is-medium">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="mb-5">
+                    <span class="icon is-large has-text-white">
+                        <i class="fas fa-question-circle fa-3x"></i>
+                    </span>
+                </div>
+                <h1 class="title is-2 mb-5">
+                    Часто задаваемые вопросы
+                </h1>
+                <h2 class="subtitle is-5 mb-5">
+                    Ответы на вопросы о системе рекомендаций книг на основе коллаборативной фильтрации
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- блок FAQ -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+
+                    <details class="ml-accordion-item mb-4">
+                        <summary class="ml-accordion-summary">
+                            <span class="ml-accordion-icon">
+                                <i class="fas fa-chevron-right"></i>
+                            </span>
+                            Что такое коллаборативная фильтрация?
+                        </summary>
+                        <div class="ml-accordion-content">
+                            <p>
+                                Коллаборативная фильтрация — это метод машинного обучения, который использует
+                                информацию о предпочтениях множества пользователей для предсказания интересов
+                                конкретного пользователя. Алгоритм анализирует оценки книг, данные различными
+                                пользователями, и находит пользователей со схожими вкусами. На основе этого
+                                формируются персональные рекомендации.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="ml-accordion-item mb-4">
+                        <summary class="ml-accordion-summary">
+                            <span class="ml-accordion-icon">
+                                <i class="fas fa-chevron-right"></i>
+                            </span>
+                            Как система формирует рекомендации?
+                        </summary>
+                        <div class="ml-accordion-content">
+                            <p>
+                                Система работает в три этапа. Сначала пользователь оценивает прочитанные книги,
+                                создавая свой профиль предпочтений. Затем алгоритм вычисляет косинусное сходство
+                                между векторами оценок разных пользователей, используя метрику косинусного расстояния.
+                                На основе найденных пользователей с похожими вкусами система формирует список книг,
+                                которые высоко оценили похожие пользователи, но которые ещё не были прочитаны
+                                текущим пользователем.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="ml-accordion-item mb-4">
+                        <summary class="ml-accordion-summary">
+                            <span class="ml-accordion-icon">
+                                <i class="fas fa-chevron-right"></i>
+                            </span>
+                            Какие данные используются?
+                        </summary>
+                        <div class="ml-accordion-content">
+                            <p>
+                                Система использует только пользовательские оценки книг. Каждая оценка представляет
+                                собой числовое значение (например, от 1 до 5), которое отражает степень
+                                удовлетворённости
+                                пользователя прочитанной книгой. Дополнительно могут учитываться метаданные книг
+                                (жанр, автор, год издания), но основой алгоритма являются именно пользовательские
+                                оценки и паттерны их распределения.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="ml-accordion-item mb-4">
+                        <summary class="ml-accordion-summary">
+                            <span class="ml-accordion-icon">
+                                <i class="fas fa-chevron-right"></i>
+                            </span>
+                            Нужно ли регистрироваться?
+                        </summary>
+                        <div class="ml-accordion-content">
+                            <p>
+                                Для получения персональных рекомендаций необходима регистрация в системе. Это
+                                позволяет сохранять историю оценок пользователя и формировать индивидуальный профиль
+                                предпочтений. Без регистрации пользователь может только просматривать общую информацию
+                                о системе, но не получать персонализированные рекомендации.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="ml-accordion-item mb-4">
+                        <summary class="ml-accordion-summary">
+                            <span class="ml-accordion-icon">
+                                <i class="fas fa-chevron-right"></i>
+                            </span>
+                            Чем система отличается от обычных онлайн-магазинов?
+                        </summary>
+                        <div class="ml-accordion-content">
+                            <p>
+                                В отличие от обычных онлайн-магазинов, которые часто предлагают популярные или
+                                рекламируемые товары, данная система использует алгоритмы машинного обучения для
+                                создания действительно персонализированных рекомендаций. Рекомендации основаны на
+                                анализе поведения пользователей со схожими предпочтениями, а не на маркетинговых
+                                стратегиях. Это позволяет находить менее известные, но релевантные для конкретного
+                                пользователя книги.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="ml-accordion-item mb-4">
+                        <summary class="ml-accordion-summary">
+                            <span class="ml-accordion-icon">
+                                <i class="fas fa-chevron-right"></i>
+                            </span>
+                            Можно ли расширить алгоритм?
+                        </summary>
+                        <div class="ml-accordion-content">
+                            <p>
+                                Да, алгоритм коллаборативной фильтрации может быть расширен различными способами.
+                                Например, можно добавить гибридный подход, сочетающий коллаборативную и контентную
+                                фильтрацию. Также возможно применение более сложных методов машинного обучения,
+                                таких как матричная факторизация, нейронные сети или ансамбли алгоритмов.
+                                Система спроектирована с учётом возможности модернизации и масштабирования.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="ml-accordion-item mb-4">
+                        <summary class="ml-accordion-summary">
+                            <span class="ml-accordion-icon">
+                                <i class="fas fa-chevron-right"></i>
+                            </span>
+                            Какие технологии используются в проекте?
+                        </summary>
+                        <div class="ml-accordion-content">
+                            <p>
+                                Проект реализован с использованием современных веб-технологий. Frontend построен на
+                                HTML5, CSS3 и фреймворке Bulma для стилизации. Для вычислений и алгоритмов
+                                машинного обучения используется Python с библиотеками NumPy и SciPy для работы с
+                                матрицами и вычисления метрик сходства. Backend может быть реализован на Flask
+                                или Django. База данных используется для хранения пользовательских оценок и
+                                метаданных о книгах.
+                            </p>
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- футер -->
+    <footer class="footer ml-footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p class="has-text-weight-semibold mb-2">BookRec AI</p>
+                <p class="mb-2">Система рекомендаций книг на основе машинного обучения</p>
+                <p class="mb-3">
+                    <span>ВКР, 2026</span>
+                </p>
+                <p>
+                    <a href="mailto:example@email.com">
+                        <span class="icon mr-1">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        a.vorobev@edu.mirea.ru
+                    </a>
+                    <span class="mx-2">|</span>
+                    <a href="https://github.com/eatthecookies">
+                        <span class="icon mr-1">
+                            <i class="fab fa-github"></i>
+                        </span>
+                        GitHub
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+            });
+        });
+    });
+</script>
+
+</html>

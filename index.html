@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BookRec AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- навигационная панель -->
+    <nav class="navbar is-fixed-top ml-navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item has-text-weight-bold" href="index.html">
+                    <span class="icon mr-2">
+                        <i class="fas fa-book-reader"></i>
+                    </span>
+                    BookRec AI
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="index.html" class="navbar-item">
+                        <span class="icon mr-2">
+                            <i class="fas fa-home"></i>
+                        </span>
+                        <span>Главная</span>
+                    </a>
+                    <a href="about.html" class="navbar-item">
+                        <span class="icon mr-2">
+                            <i class="fas fa-info-circle"></i>
+                        </span>
+                        <span>О проекте</span>
+                    </a>
+                    <a href="faq.html" class="navbar-item">
+                        <span class="icon mr-2">
+                            <i class="fas fa-question-circle"></i>
+                        </span>
+                        <span>FAQ</span>
+                    </a>
+                    <a href="support.html" class="navbar-item">
+                        <span class="icon mr-2">
+                            <i class="fas fa-headset"></i>
+                        </span>
+                        <span>Поддержка</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero секция -->
+    <section class="hero ml-hero is-medium">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="mb-5">
+                    <span class="icon is-large has-text-white">
+                        <i class="fas fa-brain fa-3x"></i>
+                    </span>
+                </div>
+                <h1 class="title is-2 mb-5">
+                    Система рекомендаций книг на основе машинного обучения
+                </h1>
+                <h2 class="subtitle is-5 mb-5">
+                    Персонализированный подбор литературы с использованием коллаборативной фильтрации
+                </h2>
+                <a class="button ml-button is-medium">
+                    <span class="icon">
+                        <i class="fas fa-rocket"></i>
+                    </span>
+                    <span>Начать подбор</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- блок о проекте -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="has-text-centered mb-5">
+                        <span class="icon is-large ml-icon-accent mb-4">
+                            <i class="fas fa-project-diagram fa-2x"></i>
+                        </span>
+                        <h2 class="title is-3 mb-4">О проекте</h2>
+                    </div>
+                    <div class="content">
+                        <p class="is-size-5 mb-4 has-text-centered">
+                            Веб-приложение предназначено для формирования персональных
+                            рекомендаций книг на основе анализа пользовательских оценок.
+                        </p>
+                        <p class="mb-5 has-text-centered">
+                            Алгоритм использует методы коллаборативной фильтрации
+                            и вычисляет степень сходства между пользователями для
+                            создания точных персонализированных рекомендаций.
+                        </p>
+                        <div class="tags is-centered">
+                            <span class="tag is-medium ml-tag">
+                                <span class="icon mr-1">
+                                    <i class="fas fa-code"></i>
+                                </span>
+                                Машинное обучение
+                            </span>
+                            <span class="tag is-medium ml-tag">
+                                <span class="icon mr-1">
+                                    <i class="fas fa-chart-line"></i>
+                                </span>
+                                Коллаборативная фильтрация
+                            </span>
+                            <span class="tag is-medium ml-tag">
+                                <span class="icon mr-1">
+                                    <i class="fas fa-users"></i>
+                                </span>
+                                Персонализация
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- преимущества -->
+    <section class="section ml-light-section">
+        <div class="container">
+            <h2 class="title has-text-centered is-3">
+                Преимущества системы
+            </h2>
+
+            <div class="columns">
+                <div class="column">
+                    <div class="card ml-feature-card">
+                        <div class="card-content has-text-centered">
+                            <div class="mb-4">
+                                <span class="icon is-large ml-icon-accent">
+                                    <i class="fas fa-database fa-2x"></i>
+                                </span>
+                            </div>
+                            <p class="title is-5 mb-4">
+                                Анализ пользовательских данных
+                            </p>
+                            <p>
+                                Использование оценок и истории взаимодействия
+                                для построения модели предпочтений.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card ml-feature-card">
+                        <div class="card-content has-text-centered">
+                            <div class="mb-4">
+                                <span class="icon is-large ml-icon-accent">
+                                    <i class="fas fa-network-wired fa-2x"></i>
+                                </span>
+                            </div>
+                            <p class="title is-5 mb-4">
+                                Коллаборативная фильтрация
+                            </p>
+                            <p>
+                                Поиск пользователей со схожими интересами
+                                и генерация релевантных рекомендаций.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card ml-feature-card">
+                        <div class="card-content has-text-centered">
+                            <div class="mb-4">
+                                <span class="icon is-large ml-icon-accent">
+                                    <i class="fas fa-robot fa-2x"></i>
+                                </span>
+                            </div>
+                            <p class="title is-5 mb-4">
+                                Алгоритмы машинного обучения
+                            </p>
+                            <p>
+                                Применение метрик сходства и математических моделей
+                                для повышения точности рекомендаций.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- как работает -->
+    <section class="section">
+        <div class="container">
+            <h2 class="title has-text-centered is-3 mb-6">
+                Как работает система
+            </h2>
+
+            <div class="columns">
+                <div class="column">
+                    <div class="ml-process-card ml-process-step">
+                        <div class="has-text-centered">
+                            <span class="tag is-rounded is-large mb-4 ml-process-icon">
+                                <span class="icon">
+                                    <i class="fas fa-clipboard-list"></i>
+                                </span>
+                            </span>
+                            <h3 class="ml-process-title">Сбор данных</h3>
+                            <p class="ml-process-description">
+                                Пользователь оценивает прочитанные книги, формируя персональный профиль предпочтений.
+                                Система анализирует оценки и создаёт вектор интересов.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ml-process-card ml-process-step">
+                        <div class="has-text-centered">
+                            <span class="tag is-rounded is-large mb-4 ml-process-icon">
+                                <span class="icon">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </span>
+                            <h3 class="ml-process-title">Анализ сходства</h3>
+                            <p class="ml-process-description">
+                                Алгоритм вычисляет косинусное сходство между пользователями, используя метрики
+                                коллаборативной фильтрации для поиска пользователей с похожими вкусами.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ml-process-card ml-process-step">
+                        <div class="has-text-centered">
+                            <span class="tag is-rounded is-large mb-4 ml-process-icon">
+                                <span class="icon">
+                                    <i class="fas fa-magic"></i>
+                                </span>
+                            </span>
+                            <h3 class="ml-process-title">Генерация рекомендаций</h3>
+                            <p class="ml-process-description">
+                                На основе найденных паттернов система формирует персонализированный список книг
+                                с высоким прогнозируемым рейтингом для конкретного пользователя.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- футер -->
+    <footer class="footer ml-footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p class="has-text-weight-semibold mb-2">BookRec AI</p>
+                <p class="mb-2">Система рекомендаций книг на основе машинного обучения</p>
+                <p class="mb-3">
+                    <span>ВКР, 2026</span>
+                </p>
+                <p>
+                    <a href="mailto:example@email.com">
+                        <span class="icon mr-1">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        a.vorobev@edu.mirea.ru
+                    </a>
+                    <span class="mx-2">|</span>
+                    <a href="https://github.com/eatthecookies">
+                        <span class="icon mr-1">
+                            <i class="fab fa-github"></i>
+                        </span>
+                        GitHub
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+            });
+        });
+    });
+</script>
+
+</html>

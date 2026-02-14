@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>О проекте - BookRec AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- навигационная панель -->
+    <nav class="navbar is-fixed-top ml-navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item has-text-weight-bold" href="index.html">
+                    <span class="icon mr-2">
+                        <i class="fas fa-book-reader"></i>
+                    </span>
+                    BookRec AI
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="index.html" class="navbar-item">
+                        <span class="icon mr-2">
+                            <i class="fas fa-home"></i>
+                        </span>
+                        <span>Главная</span>
+                    </a>
+                    <a href="about.html" class="navbar-item">
+                        <span class="icon mr-2">
+                            <i class="fas fa-info-circle"></i>
+                        </span>
+                        <span>О проекте</span>
+                    </a>
+                    <a href="faq.html" class="navbar-item">
+                        <span class="icon mr-2">
+                            <i class="fas fa-question-circle"></i>
+                        </span>
+                        <span>FAQ</span>
+                    </a>
+                    <a href="support.html" class="navbar-item">
+                        <span class="icon mr-2">
+                            <i class="fas fa-headset"></i>
+                        </span>
+                        <span>Поддержка</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- hero секция -->
+    <section class="hero ml-hero is-medium">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="mb-5">
+                    <span class="icon is-large has-text-white">
+                        <i class="fas fa-project-diagram fa-3x"></i>
+                    </span>
+                </div>
+                <h1 class="title is-2 mb-5">
+                    О проекте
+                </h1>
+                <h2 class="subtitle is-5 mb-5">
+                    Архитектура и алгоритмы системы рекомендаций
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Цель проекта -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <h2 class="title is-3 mb-5">Цель проекта</h2>
+                    <div class="content">
+                        <p class="mb-4">
+                            Разработка веб-приложения для формирования персонализированных рекомендаций книг
+                            на основе методов коллаборативной фильтрации представляет собой актуальную задачу
+                            в области машинного обучения и информационных систем. Проблема информационной перегрузки
+                            в современных библиотечных и книготорговых системах требует применения интеллектуальных
+                            алгоритмов для эффективного подбора контента, соответствующего индивидуальным
+                            предпочтениям пользователя.
+                        </p>
+                        <p>
+                            Коллаборативная фильтрация выбрана в качестве основного подхода в силу её способности
+                            работать исключительно на основе пользовательских оценок, без необходимости детального
+                            анализа содержания книг. Данный метод позволяет выявлять скрытые паттерны в поведении
+                            пользователей и формировать рекомендации на основе сходства предпочтений, что обеспечивает
+                            высокую точность предсказаний при минимальных требованиях к метаданным о контенте.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Архитектура системы -->
+    <section class="section ml-light-section">
+        <div class="container">
+            <h2 class="title has-text-centered is-3 mb-6">Архитектура системы</h2>
+            <div class="columns">
+                <div class="column">
+                    <div class="box">
+                        <div class="content">
+                            <h3 class="title is-5 mb-4">
+                                <span class="icon mr-2 ml-icon-accent">
+                                    <i class="fas fa-desktop"></i>
+                                </span>
+                                Frontend
+                            </h3>
+                            <p>
+                                Клиентская часть приложения реализована с использованием HTML5, CSS3 и фреймворка
+                                Bulma для создания адаптивного пользовательского интерфейса. Frontend обеспечивает
+                                взаимодействие пользователя с системой, отображение каталога книг, интерфейс для
+                                ввода оценок и визуализацию персональных рекомендаций. Все компоненты интерфейса
+                                спроектированы с учётом принципов юзабилити и доступности.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="box">
+                        <div class="content">
+                            <h3 class="title is-5 mb-4">
+                                <span class="icon mr-2 ml-icon-accent">
+                                    <i class="fas fa-server"></i>
+                                </span>
+                                Backend
+                            </h3>
+                            <p>
+                                Серверная часть приложения построена на Python с использованием веб-фреймворка
+                                Flask или Django. Backend обрабатывает запросы от клиента, выполняет вычисления
+                                алгоритма коллаборативной фильтрации, взаимодействует с базой данных для получения
+                                и сохранения пользовательских оценок. Алгоритм рекомендаций реализован на стороне
+                                сервера для обеспечения безопасности данных и оптимизации производительности.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="box">
+                        <div class="content">
+                            <h3 class="title is-5 mb-4">
+                                <span class="icon mr-2 ml-icon-accent">
+                                    <i class="fas fa-database"></i>
+                                </span>
+                                База данных
+                            </h3>
+                            <p>
+                                Для хранения данных используется реляционная база данных, которая содержит таблицы
+                                пользователей, книг и оценок. Структура базы данных оптимизирована для быстрого
+                                извлечения матрицы пользователь-книга, необходимой для вычисления сходства между
+                                пользователями. Индексация ключевых полей обеспечивает эффективность выполнения
+                                запросов при работе с большими объёмами данных.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Алгоритм рекомендаций -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <h2 class="title is-3 mb-5">Алгоритм рекомендаций</h2>
+                    <div class="content">
+                        <p class="mb-4">
+                            Система использует подход user-based collaborative filtering (коллаборативная фильтрация
+                            на основе пользователей) для генерации персональных рекомендаций. Данный алгоритм
+                            основан на предположении, что пользователи со схожими предпочтениями в прошлом будут
+                            иметь схожие предпочтения в будущем.
+                        </p>
+
+                        <h4 class="title is-5 mb-3">Этапы работы алгоритма:</h4>
+                        <ol class="ml-5">
+                            <li class="mb-3">
+                                <strong>Формирование матрицы пользователь-книга:</strong> Создаётся матрица R,
+                                где элемент R[i][j] представляет оценку пользователя i для книги j. Отсутствующие
+                                оценки обозначаются как нулевые значения или не учитываются при вычислениях.
+                            </li>
+                            <li class="mb-3">
+                                <strong>Вычисление сходства между пользователями:</strong> Для определения степени
+                                сходства между пользователями применяется метрика косинусного сходства (cosine
+                                similarity).
+                                Формула вычисления: sim(u, v) = (R[u] · R[v]) / (||R[u]|| × ||R[v]||), где R[u] и R[v]
+                                — векторы оценок пользователей u и v соответственно.
+                            </li>
+                            <li class="mb-3">
+                                <strong>Поиск ближайших соседей:</strong> Для целевого пользователя выбирается множество
+                                k наиболее похожих пользователей (k-nearest neighbors) на основе вычисленного сходства.
+                                Значение k определяется эмпирически и влияет на баланс между точностью и разнообразием
+                                рекомендаций.
+                            </li>
+                            <li class="mb-3">
+                                <strong>Генерация рекомендаций:</strong> На основе оценок ближайших соседей вычисляется
+                                прогнозируемый рейтинг для книг, которые целевой пользователь ещё не оценивал.
+                                Рекомендации ранжируются по убыванию прогнозируемого рейтинга и представляются
+                                пользователю в виде упорядоченного списка.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Используемые технологии -->
+    <section class="section ml-light-section">
+        <div class="container">
+            <h2 class="title has-text-centered is-3 mb-6">Используемые технологии</h2>
+            <div class="columns">
+                <div class="column">
+                    <div class="box">
+                        <div class="content has-text-centered">
+                            <div class="mb-4">
+                                <span class="icon is-large ml-icon-accent">
+                                    <i class="fab fa-python fa-3x"></i>
+                                </span>
+                            </div>
+                            <h3 class="title is-5 mb-3">Python</h3>
+                            <p>
+                                Язык программирования Python выбран в качестве основного инструмента разработки
+                                благодаря богатой экосистеме библиотек для машинного обучения и научных вычислений,
+                                а также простоте реализации алгоритмов обработки данных.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="box">
+                        <div class="content has-text-centered">
+                            <div class="mb-4">
+                                <span class="icon is-large ml-icon-accent">
+                                    <i class="fas fa-chart-line fa-3x"></i>
+                                </span>
+                            </div>
+                            <h3 class="title is-5 mb-3">ML-библиотеки</h3>
+                            <p>
+                                Для реализации алгоритмов машинного обучения используются библиотеки NumPy для
+                                работы с многомерными массивами и матрицами, Pandas для обработки структурированных
+                                данных, и Scikit-learn для реализации метрик сходства и валидации моделей.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="box">
+                        <div class="content has-text-centered">
+                            <div class="mb-4">
+                                <span class="icon is-large ml-icon-accent">
+                                    <i class="fas fa-code fa-3x"></i>
+                                </span>
+                            </div>
+                            <h3 class="title is-5 mb-3">Веб-технологии</h3>
+                            <p>
+                                Frontend построен на HTML5 и CSS3 с использованием фреймворка Bulma для создания
+                                адаптивного и современного интерфейса. Backend реализован с использованием
+                                веб-фреймворка Flask или Django для обработки HTTP-запросов и управления сессиями.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- футер -->
+    <footer class="footer ml-footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p class="has-text-weight-semibold mb-2">BookRec AI</p>
+                <p class="mb-2">Система рекомендаций книг на основе машинного обучения</p>
+                <p class="mb-3">
+                    <span>ВКР, 2026</span>
+                </p>
+                <p>
+                    <a href="mailto:example@email.com">
+                        <span class="icon mr-1">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        a.vorobev@edu.mirea.ru
+                    </a>
+                    <span class="mx-2">|</span>
+                    <a href="https://github.com/eatthecookies">
+                        <span class="icon mr-1">
+                            <i class="fab fa-github"></i>
+                        </span>
+                        GitHub
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+            });
+        });
+    });
+</script>
+
+</html>
